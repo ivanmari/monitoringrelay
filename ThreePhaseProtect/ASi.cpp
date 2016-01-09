@@ -34,4 +34,16 @@ ASi::setErrorIndicator (bool stat)
     m_platform->setPin(ERR_LED, stat);
 }
 
+void
+ASi::setOutputRelay (bool stat)
+{
+    m_platform->setPin(OUT_RLY, stat);
+}
+
+Platform*
+ASi::getPlatform() const
+{
+    return m_platform;
+}
+
 

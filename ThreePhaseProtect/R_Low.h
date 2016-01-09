@@ -8,10 +8,13 @@
 
 /** \brief Edge detection
  *
- * The R phase is being polled to find a stable HIGH level.
- * As this state was reached after a period with a stable LOW level, it is clear
+ * During the R_Low State, R phase is being polled to find a stable HIGH level.
+ * As the previous state was reached after a period with a stable LOW level, it is clear
  * that after finding a HIGH level, a rising edge occurred, so the zero crossing
  * of the phase took place and we can transition to the R_HIGH state.
+ *
+ * Previous state: R_Sync
+ * Next states: R_High, PhaseFailure
  *
  */
 

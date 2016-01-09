@@ -15,6 +15,8 @@ public:
     virtual void setRSTIndicator (bool stat);
     virtual void setRTSIndicator (bool stat);
     virtual void setErrorIndicator (bool stat);
+    virtual void setOutputRelay (bool stat);
+    virtual Platform* getPlatform() const;
 
 private:
 

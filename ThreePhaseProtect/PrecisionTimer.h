@@ -1,12 +1,12 @@
 #ifndef PRECISIONTIMER_H
 #define PRECISIONTIMER_H
 
-#include "ASi.h"
+#include "Platform.h"
 
 class PrecisionTimer
 {
 public:
-    PrecisionTimer(ASi* asi, unsigned long timeout);
+    PrecisionTimer(Platform* plat, unsigned long timeout);
     virtual ~PrecisionTimer();
 
     virtual void stop();
@@ -20,7 +20,7 @@ public:
 protected:
 
 private:
-    ASi*  m_asi;
+    Platform*  m_plat;
     unsigned long m_timeStart;
     unsigned long m_timeElapsed;
     unsigned long m_timeout;

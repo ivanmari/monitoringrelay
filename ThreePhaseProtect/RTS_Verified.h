@@ -9,6 +9,9 @@
 
 /** \brief All Phases Verified in RTS sequence
  *
+ * Once this state is entered, the 3 phases were checked to be in RTS sequence
+ * so the LED for that sequence is set to ON and the OUTPUT Relay is set to OFF
+ *
  * \param
  * \param
  * \return
