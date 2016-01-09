@@ -4,7 +4,7 @@
 const int DEBOUNCE_PERIOD = 10; //us
 
 Switch::Switch(int m_pin, bool level, ASi* asi):m_pin(m_pin), m_active_level(level),
-    m_debounceTimer(asi, DEBOUNCE_PERIOD), m_platform(asi->getPlatform()) {}
+    m_debounceTimer(asi->getPlatform(), DEBOUNCE_PERIOD), m_platform(asi->getPlatform()) {}
 
 bool
 Switch::isOn()

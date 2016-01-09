@@ -1,12 +1,12 @@
 #include "RST_Verified.h"
 
 #include "io_defs.h"
-#include "PhaseFailure_state.h"
+#include "PhaseFailure.h"
 #include "R_Sync.h"
 
 const long TIMEOUT = 1000000; //one second in us
 
-RST_Verified::RST_Verified(Fsm* fsm, ASi* asi):State(fsm),  m_asi(asi), m_displayTimer(asi, TIMEOUT)
+RST_Verified::RST_Verified(Fsm* fsm, ASi* asi):State(fsm),  m_asi(asi), m_displayTimer(asi->getPlatform(), TIMEOUT)
 {}
 
 RST_Verified*
@@ -24,6 +24,7 @@ RST_Verified::execute()
     m_asi->setRSTIndicator (true);
     m_asi->setRTSIndicator (false);
     m_asi->setErrorIndicator (false);
+    m_asi->setOutputRelay(true);
 
     if(m_displayTimer.expired())
     {

@@ -13,6 +13,9 @@
  * After polling the phase for TIMEOUT us without finding a stable LOW, a
  * transition to PhaseFailure is triggered
  *
+ * Previous state: null
+ * Next states: R_Low, PhaseFailure
+ *
  */
 
 

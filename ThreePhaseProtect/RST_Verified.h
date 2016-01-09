@@ -8,6 +8,9 @@
 
 /** \brief All Phases Verified in in RST sequence
  *
+ * Once this state is entered, the 3 phases were checked to be in RST sequence
+ * so the LED for that sequence is set to ON and the OUTPUT Relay is set to ON
+ *
  * \param
  * \param
  * \return

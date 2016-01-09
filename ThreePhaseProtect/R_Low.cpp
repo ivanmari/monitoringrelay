@@ -5,7 +5,7 @@
 
 const int BLOCKING_PERIOD = 15000; //15 milliseconds
 
-R_Low::R_Low(Fsm* fsm, ASi* asi):State(fsm), m_asi(asi), m_periodTimer(asi, BLOCKING_PERIOD), m_sw(R_PHASE, HIGH, asi)
+R_Low::R_Low(Fsm* fsm, ASi* asi):State(fsm), m_asi(asi), m_periodTimer(asi->getPlatform(), BLOCKING_PERIOD), m_sw(R_PHASE, HIGH, asi)
 {}
 
 R_Low*

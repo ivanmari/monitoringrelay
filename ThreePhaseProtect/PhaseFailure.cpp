@@ -4,7 +4,7 @@
 
 const long BLOCKING_PERIOD = 1000000; //one second in us
 
-PhaseFailure::PhaseFailure(Fsm* fsm, ASi* asi):State(fsm), m_asi(asi),m_blockingPeriodTimer(asi, BLOCKING_PERIOD), m_sw(R_PHASE, HIGH, asi)
+PhaseFailure::PhaseFailure(Fsm* fsm, ASi* asi):State(fsm), m_asi(asi),m_blockingPeriodTimer(asi->getPlatform(), BLOCKING_PERIOD), m_sw(R_PHASE, HIGH, asi)
 {}
 
 PhaseFailure*

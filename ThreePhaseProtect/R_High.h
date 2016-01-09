@@ -12,11 +12,14 @@
  *
  * Either:
  *
- * S is HIGH && T is LOW => RTS sequence  R_High_State --> RTS_State
+ * S is HIGH && T is LOW => RTS sequence
  *
  * OR
  *
- * S is LOW && T is HIGH => RST sequence  R_High_State --> RST_State
+ * S is LOW && T is HIGH => RST sequence
+ *
+ * Previous state: R_Low
+ * Next states: RTS_Detected, RST_Detected, PhaseFailure
  *
  * \param
  * \param

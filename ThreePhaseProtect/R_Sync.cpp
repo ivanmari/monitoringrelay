@@ -5,7 +5,7 @@
 
 const int TIMEOUT = 20000; //20 milliseconds
 
-R_Sync::R_Sync(Fsm* fsm, ASi* asi):State(fsm), m_asi(asi), m_periodTimer(asi, TIMEOUT), m_sw(R_PHASE, LOW, asi)
+R_Sync::R_Sync(Fsm* fsm, ASi* asi):State(fsm), m_asi(asi), m_periodTimer(asi->getPlatform(), TIMEOUT), m_sw(R_PHASE, LOW, asi)
 {}
 
 R_Sync*

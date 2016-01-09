@@ -9,6 +9,13 @@
 
 /** \brief RTS Sequence Detected
  *
+ *  Once in this state, we know that after R came T, but we must still
+ *  verify that S is going High so as to be sure that the 3 phases are
+ *  working OK.
+ *
+ *  Previous state: R_High
+ *  Next states: RTS_Verified, PhaseFailure
+ *
  * \param
  * \param
  * \return
