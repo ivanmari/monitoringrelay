@@ -7,9 +7,11 @@ a faulty phase.
 
 ## Hardware
 
-The circuit, for each phase detection input is the same as the one depicted here https://smartsolutions4home.com/detecting-mains-voltage-with-microcontroller/.
+The circuit, for each phase detection input is the same as the one depicted here https://smartsolutions4home.com/detecting-mains-voltage-with-microcontroller/. So we will use three inputs on the MCU for mains detection.
 
-The outputs can be attached to an optocoupled relay and then to the contactor STOP switch.
+The fault output can be attached to an optocoupled relay and then to the contactor M switch.
+
+The LEDs can be directly connected to the outputs of the MCU.
 
 ## Logic
 
