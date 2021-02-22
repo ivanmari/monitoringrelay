@@ -1,16 +1,17 @@
-Monitoring Relay for Three Phase Motors
+# Monitoring Relay for Three Phase Motors
 
 This application detects the phase sequence of a three phase 380V 50Hz system and signals also
 a faulty phase.
 ![](https://github.com/ivanmari/monitoringrelay/blob/master/ThreePhaseProtect/Resources/MonitoringRelayApp.png)
 
 
-Hardware
+## Hardware
 
-The circuit, for each phase is the same as the one depicted here https://smartsolutions4home.com/detecting-mains-voltage-with-microcontroller/.
+The circuit, for each phase detection input is the same as the one depicted here https://smartsolutions4home.com/detecting-mains-voltage-with-microcontroller/.
 
+The outputs can be attached to an optocoupled relay and then to the contactor STOP switch.
 
-Logic
+## Logic
 
 In each of the three IO lines, R, S and T, there will be a square wave shifted 120 degs each. 
 For sequence detection, we use the same principle used in quadrature encoders. There will be
