@@ -1,5 +1,7 @@
 # Monitoring Relay for Three Phase Motors
 
+
+## Description
 This application detects the phase sequence of a three phase 380V 50Hz system and signals also
 a faulty phase.
 ![](https://github.com/ivanmari/monitoringrelay/blob/master/ThreePhaseProtect/Resources/MonitoringRelayApp.png)
