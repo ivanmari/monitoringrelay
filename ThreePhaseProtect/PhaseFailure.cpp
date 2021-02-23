@@ -20,7 +20,7 @@ PhaseFailure::execute()
     m_blockingPeriodTimer.start();
 
     m_asi->setRSTIndicator (false);
-    m_asi->setRSTIndicator (false);
+    m_asi->setRTSIndicator (false);
     m_asi->setErrorIndicator (true);
 
     if(m_blockingPeriodTimer.expired())
