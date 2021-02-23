@@ -9,7 +9,7 @@ a faulty phase.
 
 ## Hardware
 
-The circuit, for each phase detection input is the same as the one depicted here https://smartsolutions4home.com/detecting-mains-voltage-with-microcontroller/. So we will use three inputs on the MCU for mains detection.
+The circuit for each phase detection input is the same as the one depicted [here](https://smartsolutions4home.com/detecting-mains-voltage-with-microcontroller/). So we will use three inputs on the MCU for mains detection.
 
 The fault output can be attached to an optocoupled relay and then to the contactor M switch.
 
@@ -32,4 +32,8 @@ does not occur within the correct period of time, then an alarm is displayed for
 motor contactor is opened. After that time, the system enters in the initial state trying to detect
 phase sequence again. But the contactor remains open until Start is pressed.
 
+## Platform
+
+The FSM is written in standard C++ code and it is abstracted from the I/O by means of a Platform class.
+For testing and demo purposes I have implemented an x86 and an Arduino platforms respectively.
 
