@@ -17,8 +17,7 @@ that time, the system enters in the initial state trying to detect phase sequenc
 
 #include "ArduinoPlat.h"
 #include "ASi.h"
-#include "PrecisionTimer.h"
-#include "Switch.h"
+#include "BarePoller.h" // Added
 #include "io_defs.h"
 #include "R_Sync.h"
 

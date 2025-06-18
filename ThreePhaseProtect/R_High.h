@@ -2,9 +2,8 @@
 #define DoorsClosed_H
 
 #include "Fsm.h"
-#include "PrecisionTimer.h"
 #include "ASi.h"
-#include "Switch.h"
+#include "BarePoller.h" // Added
 
 /** \brief Sequence detection
  *

@@ -2,6 +2,7 @@
 #define DoorsOpen_H
 
 #include "Fsm.h"
+#include "ASi.h"
 #include "PrecisionTimer.h"
 #include "Switch.h"
 
@@ -41,4 +42,3 @@ private:
     Switch m_sw;
 };
 #endif
-
