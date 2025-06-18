@@ -2,7 +2,9 @@
 #define DoorsOpen_H
 
 #include "Fsm.h"
-#include "BarePoller.h" // Added
+#include "ASi.h"
+#include "PrecisionTimer.h"
+#include "Switch.h"
 
 /** \brief Synchronization
  *
@@ -40,4 +42,3 @@ private:
     Switch m_sw;
 };
 #endif
-
