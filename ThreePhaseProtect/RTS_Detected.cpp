@@ -6,9 +6,9 @@
 const long TIMEOUT = 10000; //ten ms in us
 
 RTS_Detected::RTS_Detected(Fsm* fsm, ASi* asi):State(fsm),  m_asi(asi), m_periodTimer(asi->getPlatform(), TIMEOUT),
-                                         m_r_sw(R_PHASE, HIGH, asi),
-                                         m_s_sw(S_PHASE, HIGH, asi),
-                                         m_t_sw(T_PHASE, HIGH, asi)
+                                         m_r_sw(asi->getPlatform(), R_PHASE, HIGH),
+                                         m_s_sw(asi->getPlatform(), S_PHASE, HIGH),
+                                         m_t_sw(asi->getPlatform(), T_PHASE, HIGH)
 {}
 
 RTS_Detected*

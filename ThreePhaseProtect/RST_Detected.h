@@ -2,8 +2,7 @@
 #define R_S_H
 
 #include "ASi.h"
-#include "PrecisionTimer.h"
-#include "Switch.h"
+#include "BarePoller.h" // Added
 #include "Fsm.h"
 
 /** \brief RST Sequence Detected

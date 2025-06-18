@@ -2,8 +2,7 @@
 #define PHASEFAILURE_STATE_H
 
 #include "ASi.h"
-#include "PrecisionTimer.h"
-#include "Switch.h"
+#include "BarePoller.h" // Added
 #include "Fsm.h"
 
 class PhaseFailure: public State

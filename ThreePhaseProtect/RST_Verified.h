@@ -2,9 +2,8 @@
 #define RST_VERIFY_H
 
 #include "Fsm.h"
-#include "PrecisionTimer.h"
 #include "ASi.h"
-#include "Switch.h"
+#include "BarePoller.h" // Added
 
 /** \brief All Phases Verified in in RST sequence
  *

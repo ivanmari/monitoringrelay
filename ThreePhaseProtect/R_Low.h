@@ -2,9 +2,8 @@
 #define R_LOW_STATE_H
 
 #include "Fsm.h"
-#include "PrecisionTimer.h"
 #include "ASi.h"
-#include "Switch.h"
+#include "BarePoller.h" // Added
 
 /** \brief Edge detection
  *
